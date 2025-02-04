@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK MY SHOW </title>
+    <link rel="icon" type="image/x-icon" href="https://startuptalky.com/content/images/2020/05/bookmyshow-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+.logo{
+display: flex;
+justify-content: space-between;
+background-color: rgb(252, 87, 87);
+padding: 1.5rem;
+}
+img{
+   height: 100px;
+   width: 200px;
+}
+.right button{
+    font-size: 1.8rem;
+    margin-left: 0.8rem;
+    color:whitesmoke ;
+    border: none;
+    background-color:rgb(252, 87, 87) ;
+    padding: .5rem;
+    cursor: pointer;
+}
+.search
+{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+    background-color: rgb(206, 206, 206);
+}
+.seacrhing{
+    width: 400px;
+    max-width: 60%;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+
+}
+.search > button{
+    font-size: 1rem;
+    background-color: rgb(252, 87, 87);
+    border-radius: 8px;
+    color: antiquewhite;
+    padding: 0.5rem;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-image: url(https://img.freepik.com/free-photo/movie-background-collage_23-2149876003.jpg);
+}
+.hero >h2{
+    font-size: 50px;
+}
+.hero >button{
+    background-color: rgb(252, 87, 87);
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0.5rem;
+border-radius:2px ;
+}
+.mover{
+    text-align: center;
+    padding: 1rem;
+}
+.mover h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.images{
+    height:400px;
+
+}
+.movie{
+    display: flex;
+    /* ustify-content: center;j */
+    overflow-x: scroll;
+}
+.card {
+   border: 0.2rem solid grey;
+   background-color:grey;
+   text-align: center;
+   margin-left: 1rem;
+   border-radius: 3px;
+}
+.card >h3{
+font-size: 2rem;
+}
+.bot{
+    margin-top: 2rem;
+    text-align: center;
+}
+.bot > .img {
+   width: 80%;
+    border-radius:10px;
+}
+.events{
+    font-size: 70px;
+}
+.events-pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.events-pic > .pic >img{
+    height: 300px;
+}
+.events-pic > .pic >img:hover{
+    transform: scale(1.3);
+    transition: 2s;
+}
+.laugh_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.laugh_section>div>.images{
+height: 500px;
+width: 300px;
+}
+.laugh_section>div{
+    border-radius: 20px;
+}
+.book{
+    height: 150px;
+    width: 100%;
+    background-color:rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.book> button{
+    background-color: rgb(252, 87, 87);
+    color: antiquewhite;
+    width: 20rem;
+    font-size: 2.5rem;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+.book>button:hover{
+background-color: aliceblue;
+color: black;
+}
+.last{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(90, 90, 90);
+}
+
+.l1{
+    font-size: 2rem;
+    padding-left: 7rem;
+    padding-top: 1.6rem;
+    color: rgb(185, 185, 185);
+}
+.l1:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.l1>i{
+    font-size: 5rem;
+    padding-left: 2rem;
+}
+.f1{
+    background-color: rgb(161, 161, 161);
+}
+.f1>img{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  display: block;
+}
+.footer-icon{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(126, 126, 126);
+    padding: 3rem 30rem;
+}
+.footer-icon>div{
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(68, 68, 68);
+    border-radius: 50%;
+}
+.footer-icon>.icon{
+    border-radius: 50%;
+}
+.footer-icon>div>i:hover{
+background-color: aliceblue;
+cursor: pointer;
+}
+.term{
+    background-color: rgb(185, 185, 185);
+}
+.term>h1{
+    text-align: center;
+}
+@media (max-width:600px) {
+ .logo{
+    flex-direction: column;
+    align-items: center;
+ }   
+ .right{
+    display: flex;
+    flex-direction: column;
+ }
+ .movie{
+    flex-direction: column;
+ }
+ .card > .images{
+    width: 80%;
+ }
+ .laugh_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.laugh_section>div>.images{
+height: 500px;
+width: 100%;
+}
+.bot > .img {
+   width: 100%;
+    border-radius:10px;
+}
+.text{
+    padding-top: 2rem;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.last{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(90, 90, 90);
+}
+.l1{
+    font-size: 2rem;
+    padding-left: 4rem;
+    padding-top: 1.6rem;
+    color: rgb(185, 185, 185);
+}
+.footer-icon{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(126, 126, 126);
+    padding: 3rem 30rem;
+}
+}
+
+    </style>
+</head>
+<body>
+    <!-- Creation of the heder section  -->
+     <header>
+        <div class="head">
+            <div class="logo">
+                <div class="left">
+                    <img src="https://bookmyshow-clone-masaischool.netlify.app/bookmyshow-logo.png" alt=""></div>
+                <div class="right">
+                    <button>Movies</button>
+                    <button>Events</button>
+                    <button>Sports</button>
+                    <button>More</button>
+                </div>
+        </div>
+        </div>
+        <div class="search">
+            <input type="text" class="seacrhing" placeholder="Search for the movies you want">
+    <button>Search</button>
+        </div>
+     </header>
+     <!-- Hero part -->
+      <div class="hero">
+        <h2 style="font-size: 60px;">Experience the best Movies and events</h2>
+        <button>Book Now</button>
+      </div>
+     <!-- Movie section -->
+      <div class="mover">
+        <h2>Popular Movies</h2>
+      </div>
+      <div class="movie">
+        <div class="card">
+            <img src="https://static.digit.in/product/munjya-6e82e706af.jpeg" alt="" class="images">
+            <h3>Munjya</h3>
+        </div>
+        <div class="card"><img src="https://img.republicworld.com/tr:w-800,h-450,q-75,f-auto/all_images/stree-2-1723497290202-16_9.webp" alt="" class="images">
+            <h3>Streee 2</h3></div>
+        <div class="card"><img src="https://i.ytimg.com/vi/LWevIKJVDDk/maxresdefault.jpg" alt="" class="images">
+            <h3>Bhul Bhulaiya</h3></div>
+        <div class="card"><img src="https://static.toiimg.com/photo/msid-106980960/106980960.jpg?550146" alt="" class="images">
+            <h3>Shaitan</h3></div>
+            <div class="card"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni45LzEwICAzLjZLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00418422-ljtpwzpjxq-portrait.jpg" alt="" class="images">
+                <h3>Aazad</h3></div>
+                <div class="card"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICAyLjZLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00413205-cflrgzrkxw-portrait.jpg" alt="" class="images">
+                    <h3>Ramayan</h3></div>
+                    <div class="card"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA3Ni42SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00396541-hhkrpankjb-portrait.jpg" alt="" class="images">
+                        <h3>Mufasa</h3></div>
+                        <div class="card"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICAzMi40SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00371539-yqjkjctnet-portrait.jpg" alt="" class="images">
+                            <h3>Sky Force</h3></div>
+                            <div class="card"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4zLzEwICA0NTkuOUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00356724-dynwtezcja-portrait.jpg" alt="" class="images">
+                                <h3>Pushpa 2</h3></div>
+                                <div class="card"><img src="https://th.bing.com/th/id/OIF.qc52iGcF1sYdms68TKgvTA?w=318&h=180&c=7&r=0&o=5&pid=1.7" alt="" class="images">
+                                    <h3>LoveYapa</h3></div>
+ <div class="card"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4xLzEwICAxMi4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00391731-jngatzefjy-portrait.jpg" class="images">
+ <h3>Fateh</h3></div>
+      </div>
+      <div class="bot">
+        <img src="endless.avif" alt="" class="img">
+      </div>
+      <!-- Event Part -->
+      <h1 class="events">The Best Live Events</h1>
+      <div class="events-pic">
+        <div class="pic"><img src="img1.avif" alt=""></div>
+        <div class="pic"><img src="img2.avif" alt=""></div>
+        <div class="pic"><img src="img3.avif" alt=""></div>
+        <div class="pic"><img src="img4.avif" alt=""></div>
+        <div class="pic"> <img src="img5.avif" alt=""></div>
+        <div class="pic"><img src="img6.avif" alt=""></div>
+        <div class="pic"><img src="img7.avif" alt=""></div>
+        <div class="pic"><img src="img8.avif" alt=""></div>
+      </div>
+      <!-- Laughter section  -->
+       <div class="laugh">
+        <h1 style="font-size: 3rem;">Laughter Therepy</h1>
+            <div class="laugh_section" style="overflow-x: scroll;">
+                <div class="p1"><img src="p1.avif" alt="" class="images">
+                <h4 style="font-size: 1.9rem;">Kisi ko batana Mat<br> Ft.Anubhav Singh Bassi</h4>
+                </div>
+                <div class="p2"><img src="p2.avif" alt="" class="images">
+                <h4 style="font-size: 1.9rem;">India Tour Delhi<br> NCR</h4>
+            </div>
+                <div class="p3"><img src="p3.avif" alt="" class="images">
+                <h4 style="font-size: 1.9rem;">TAB UNSCRIPTED</h4>
+            </div>
+                <div class="p4"><img src="p4.avif" alt="" class="images">
+                <h4 style="font-size: 1.9rem;">Spill the Word</h4>
+            </div>
+                <div class="p5"><img src="p5.avif" alt="" class="images">
+                    <h4 style="font-size: 1.9rem;">Poetry openemic</h4>
+                </div>
+            </div>
+       </div>
+       <div class="book">
+        <div class="text">
+            <h1><i class="fa-solid fa-film" style="padding-right: 2rem;"></i>List your show Now!</h1>
+        </div>
+       <button>Contact Today!</button>
+       </div>
+       <div class="last">
+        <div class="l1">
+            <i class="fa-solid fa-user"></i><br>
+            24/7 CUSTOMER CARE
+        </div>
+        <div class="l1"><i class="fa-solid fa-money-bills" style="padding-left: 3rem;"></i><br>
+            RESEND MONEY<br> CONFIRMATION</div>
+        <div class="l1"><i class="fa-solid fa-envelope" style="padding-left: 3rem;"></i><br>
+            SUBSCRIBE TO THE<br> NEWS LETTER</div>
+       </div>
+       <div class="f1"> <img src="https://bookmyshow-clone-masaischool.netlify.app/bookmyshow-logo.png" alt=""></div></div>
+       <div class="footer-icon" style="width: auto;">
+        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+        <div class="icon"><i class="fa-brands fa-snapchat"></i></div>
+        <div class="icon"><i class="fa-brands fa-linkedin"></i> </div>
+    </div>
+    <div class="term">
+        <h1>Copyright 2025.All Rights are Reserbed</h1>
+    </div>
+
+</body>
+</html>
